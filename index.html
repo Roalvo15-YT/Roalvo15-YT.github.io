@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!-- Menú de navegación -->
+<nav>
+  <ul>
+    <li><a href="#campana">Campaña</a></li>
+    <li><a href="#faq">Preguntas frecuentes</a></li>
+    <li><a href="#comentarios">Comentarios</a></li>
+    <li><a href="#contribuciones">Contribuciones</a></li>
+    <li><a href="#objetivos">Objetivos</a></li>
+    <li><a href="#equipo">Equipo</a></li>
+  </ul>
+</nav>
+<style>
+nav {
+  background: #222;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+section {
+  padding: 80px 20px;
+  margin-top: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fan Page - The Last of Us Parte II</title>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+
+.kickstarter-bar {
+  background-color: #333;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.kickstarter-bar-fill {
+  width: 45%;
+  height: 20px;
+  background-color: #ffc107;
+  transition: width 0.6s ease-in-out;
+}
+
+
+    body {
+      margin: 0;
+      font-family: 'Titillium Web', sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+
+    header {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(18, 18, 18, 1));
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 2px;
+    }
+
+    .banner {
+      width: 100%;
+      height: 500px;
+      background-image: url("https://sm.ign.com/ign_es/screenshot/default/c988b0cc253d9f3de0b5dedb9416795a8dae1ee67d179f3d_h5s5.png");
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .banner::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .section h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #888;
+      padding-bottom: 5px;
+    }
+
+    .character {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .character-card {
+      background-color: #1e1e1e;
+      padding: 15px;
+      border-radius: 8px;
+      flex: 1;
+      min-width: 250px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+
+    .character-card h3 {
+      margin-top: 0;
+      color: #e0c068;
+    }
+
+    ..gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    }
+
+    .info-box {
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-left: 5px solid #00bcd4;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
+    .marketing-box {
+      background-color: #262626;
+      border-left: 5px solid #ff4c4c;
+      padding: 20px;
+      margin-top: 30px;
+      border-radius: 8px;
+    }
+
+    .marketing-box h3 {
+      margin-top: 0;
+      color: #ff9f9f;
+    }
+
+    .audio-box {
+      background-color: #1e1e1e;
+      padding: 20px;
+      margin-top: 30px;
+      border-left: 5px solid #33c9aa;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    audio {
+      margin-top: 10px;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1a1a1a;
+      color: #aaa;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+
+    a {
+      color: #a0cfff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    <style>
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('https://i.ibb.co/9vKmXzT/fungus-bg.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+    pointer-events: none;
+  }
+
+  .spore-particle {
+    position: fixed;
+    width: 6px;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: float 6s infinite ease-in-out;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0) scale(0.8);
+      opacity: 0.2;
+    }
+    50% {
+      transform: translateY(-60px) scale(1.2);
+      opacity: 0.4;
+    }
+    100% {
+      transform: translateY(0) scale(0.8);
+      opacity: 0.2;
+    }
+  }
+</style>
+
+<script>
+  const spores = [];
+
+  function createSpores() {
+    for (let i = 0; i < 20; i++) {
+      const spore = document.createElement('div');
+      spore.classList.add('spore-particle');
+      spore.style.left = `${Math.random() * 100}vw`;
+      spore.style.top = `${Math.random() * 100}vh`;
+      spore.style.animationDelay = `${Math.random() * 6}s`;
+      document.body.appendChild(spore);
+      spores.push(spore);
+    }
+  }
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const maxScroll = document.body.scrollHeight - window.innerHeight;
+    const progress = scrollY / maxScroll;
+    document.body.style.backgroundColor = `rgb(${18 + progress * 30}, ${18 + progress * 20}, ${18 + progress * 10})`;
+
+    document.body.style.setProperty('--scroll', progress);
+    document.body.querySelector('body::before')?.style.setProperty('opacity', progress);
+    document.body.style.setProperty('--overlay-opacity', progress);
+    document.querySelector('body').style.setProperty('--overlay-opacity', progress);
+    document.querySelector('body::before');
+    document.body.style.setProperty('--fungus-opacity', progress);
+    document.body.style.setProperty('--fungus-scale', 1 + progress * 0.1);
+
+    // Set opacity of fungus background
+    document.querySelector("body").style.setProperty('--fungus-opacity', progress);
+    document.querySelector("body::before")?.style.setProperty('opacity', progress);
+    document.body.style.setProperty('--fungus-opacity', progress);
+    document.body.style.setProperty('--fungus-scale', 1 + progress * 0.2);
+    document.querySelector("body::before");
+    document.querySelector("body").style.setProperty('--overlay-opacity', progress);
+    document.querySelector("body").style.setProperty('--overlay-scale', 1 + progress * 0.1);
+    document.querySelector("body").style.setProperty('--overlay-blur', `${progress * 2}px`);
+  });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    createSpores();
+  });
+</script>
+
+  </style>
+
+  <style>
+  /* Fondo de setas (aparecerán gradualmente con el scroll) */
+  .mushroom {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    pointer-events: none;
+    animation: mushroom-appear 5s ease-out infinite;
+  }
+
+  @keyframes mushroom-appear {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .spore-particle {
+    position: fixed;
+    width: 6px;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: float 6s infinite ease-in-out;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0) scale(0.8);
+      opacity: 0.2;
+    }
+    50% {
+      transform: translateY(-60px) scale(1.2);
+      opacity: 0.4;
+    }
+    100% {
+      transform: translateY(0) scale(0.8);
+      opacity: 0.2;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Fan Page Logo" style="width: 150px; margin-bottom: 20px;">
+    <h1>THE LAST OF US PART II - FAN PAGE</h1>
+    <p>Una historia de supervivencia, pérdida y redención</p>
+  </header>
+
+  <div class="banner"></div>
+  <div class="kickstarter-bar">
+    <div class="kickstarter-bar-fill"></div>
+  </div>
+  
+  <section class="section" style="color: #ff6f61;">
+    <h2>"Sumérgete en un mundo donde cada decisión cuenta y cada paso deja huella (ESTE LEMA ES DE CHATGPT, NO EL LEMA QUE SE USARÁ)."</h2>
+  </section>
+
+  <section class="section">
+    <h2>📖 Sobre el juego</h2>
+    <p><strong>The Last of Us Parte II</strong> es una experiencia narrativa intensa, situada en un mundo postapocalíptico devastado por un hongo letal. A través de una jugabilidad visceral y cinematográfica, vivirás la historia de Ellie mientras lucha con su pasado, sus decisiones y la brutalidad del mundo que la rodea. Cada momento está cargado de emoción, tensión y belleza cruda.</p>
+  </section>
+  
+  <section class="section marketing-box">
+    <h3>¿Por qué deberías jugarlo?</h3>
+    <p>✔️ Ganador de más de 300 premios a Juego del Año.</p>
+    <p>✔️ Una narrativa emocionalmente poderosa con personajes inolvidables.</p>
+    <p>✔️ Banda sonora compuesta por Gustavo Santaolalla, que acompaña cada momento con alma.</p>
+    <p>✔️ Disponible ahora en <strong>PS5</strong> y próximamente en <strong>PC</strong> con mejoras gráficas y contenido adicional.</p>
+    <p><a href="https://www.playstation.com/es-es/games/the-last-of-us-part-ii-remastered/" target="_blank">👉 ¡Consíguelo ahora y únete a la historia!</a></p>
+  </section>
+
+  <section class="section audio-box">
+    <h2>🎵 Banda Sonora Oficial</h2>
+    <p>Escucha una de las piezas principales del juego:</p>
+    <audio controls>
+      <source src="The Last of Us Part II (Main Theme) _ The Last of Us Part II (Original Soundtrack) [fAdpMMNeiuM].mp3" type="audio/mp3">
+      Tu navegador no soporta el reproductor de audio.
+    </audio>
+  </section>
+
+  <section class="section">
+    <h2>🌿 Personajes principales</h2>
+    <div class="character">
+      <div class="character-card">
+        <h3>Ellie</h3>
+        <p>La protagonista principal. Fuerte, decidida y marcada por su pasado. Su viaje es el centro emocional del juego.</p>
+      </div>
+      <div class="character-card">
+        <h3>Joel</h3>
+        <p>Figura paterna para Ellie. Su historia es profunda y compleja, llena de decisiones difíciles y consecuencias.</p>
+      </div>
+      <div class="character-card">
+        <h3>Abby</h3>
+        <p>Un personaje que desafía la percepción del jugador. Guerrero hábil, con una motivación muy personal.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>🆕 Remaster y Port para PC</h2>
+    <div class="info-box">
+      <p><strong>The Last of Us Parte II Remastered</strong> fue lanzado para PS5 en enero de 2024, incluyendo:</p>
+      <ul>
+        <li>Gráficos mejorados en 4K nativos</li>
+        <li>Tiempos de carga reducidos</li>
+        <li>Compatibilidad con DualSense (gatillos adaptativos y respuesta háptica)</li>
+        <li>Modo "Sin retorno" (roguelike de combate)</li>
+        <li>Comentarios de los desarrolladores y nuevas pistas musicales</li>
+      </ul>
+      <p>Además, se ha confirmado el <strong>lanzamiento oficial para PC</strong> en 2025. El port estará optimizado para teclado, ratón y gráficas de alto rendimiento.</p>
+      <p><a href="https://www.playstation.com/es-es/games/the-last-of-us-part-ii-remastered/" target="_blank">Ver detalles en PlayStation.com →</a></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>📺 Adaptaciones en TV</h2>
+  
+    <div class="info-box">
+      <h3>🎬 Temporada 1 (HBO - 2023)</h3>
+      <p>La aclamada serie de HBO adapta la historia del primer juego con una fidelidad emocional impresionante. Protagonizada por <strong>Pedro Pascal</strong> como Joel y <strong>Bella Ramsey</strong> como Ellie, la serie recibió elogios por su guion, actuaciones y ambientación postapocalíptica.</p>
+      <ul>
+        <li>✔️ 9 episodios</li>
+        <li>✔️ Escrita por Craig Mazin (Chernobyl) y Neil Druckmann (creador del juego)</li>
+        <li>✔️ Calificada como una de las mejores adaptaciones de videojuegos de la historia</li>
+      </ul>
+      <p><a href="https://www.hbo.com/the-last-of-us" target="_blank">Ver más en HBO →</a></p>
+    </div>
+  
+    <div class="info-box" style="border-left-color:#c792ea;">
+      <h3>🛠️ Temporada 2 en desarrollo</h3>
+      <p>Actualmente en producción, la segunda temporada adaptará parte de la historia de <strong>The Last of Us Parte II</strong>. Bella Ramsey regresa como Ellie, y se rumorea que nuevos personajes clave como Abby ya están en proceso de casting.</p>
+      <ul>
+        <li>📅 Fecha estimada de estreno: 2025</li>
+        <li>📍 Filmaciones confirmadas en Canadá</li>
+        <li>🔁 La historia será contada en más de una temporada</li>
+      </ul>
+      <p>Se espera que esta nueva temporada profundice en los temas de venganza, trauma y redención que definen el segundo juego.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>🎮 Galería</h2>
+    <div class="gallery">
+      <img src="Tlou2.png" alt="The Last of Us Parte II - Ellie y Joel">
+      <img src="tlou1_-_alt2.png" alt="The Last of Us Parte I - Joel y Ellie">
+      <img src="hq720.jpg" alt="Temporal">
+      <img src="hq720.jpg" alt="Temporal">
+      <img src="hq720.jpg" alt="Temporal">
+      <img src="hq720.jpg" alt="Temporal">
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>💖 Apoya el Proyecto</h2>
+    <div class="marketing-box" style="border-left-color: #ff6f61;">
+      <p>Si te gusta esta fan page y quieres ayudar a mantenerla viva, ¡puedes apoyarnos en Patreon! Cada aporte permite seguir mejorando el contenido, añadir más secciones, rendir homenaje a este increíble universo y que la profe nos ponga buena nota :D.</p>
+      <p>Tu ayuda es vital para mantener este rincón para fans ❤️</p>
+      <p style="text-align: center; margin-top: 20px;">
+        <a href="https://www.patreon.com/TheLastOfUsMultimedia" target="_blank" style="background-color: #ff6f61; color: white; padding: 12px 25px; border-radius: 6px; font-weight: bold; text-decoration: none;">🔥 Apóyanos en Patreon</a>
+      </p>
+    </div>
+  </section>
+  
+  <section class="section">
+    <h2>🚀 Proyecto Kickstarter</h2>
+    <div class="info-box" style="border-left-color: #ffc107;">
+      <p>Estamos desarrollando una versión expandida de esta fan page con más contenido interactivo, entrevistas, historia detallada, mapas, minijuegos y mucho más. ¡Pero necesitamos tu apoyo para hacerlo realidad!</p>
+      
+      <h3 style="color: #ffc107;">Objetivo: 1,000€</h3>
+      <div style="background-color: #333; border-radius: 20px; overflow: hidden; margin: 10px 0;">
+        <div style="width: 45%; height: 20px; background-color: #ffc107;"></div>
+      </div>
+      <p><strong>450€ recaudados</strong> · <em>45% del objetivo</em></p>
+  
+      <h4 style="margin-top: 20px; color: #fff;">🎁 Recompensas para patrocinadores:</h4>
+      <ul>
+        <li>5€ - Mención especial en la web</li>
+        <li>15€ - Acceso anticipado a contenido exclusivo</li>
+        <li>30€ - Wallpapers en HD y sonido ambiente original</li>
+        <li>50€+ - Créditos como "Productor/a Fan Honorario"</li>
+      </ul>
+  
+      <p style="text-align: center; margin-top: 25px;">
+        <a href="https://www.kickstarter.com" target="_blank" style="background-color: #ffc107; color: #000; padding: 12px 25px; border-radius: 6px; font-weight: bold; text-decoration: none;">
+          🚀 Apóyanos en Kickstarter
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>📎 Enlaces Relevantes</h2>
+    <ul>
+      <li><a href="https://www.playstation.com/es-es/games/the-last-of-us-part-ii/" target="_blank">Sitio oficial de TLOU2</a></li>
+      <li><a href="https://www.youtube.com/watch?v=vhII1qlcZ4E" target="_blank">Tráiler oficial en YouTube</a></li>
+      <li><a href="https://www.playstation.com/es-es/games/the-last-of-us-part-ii-remastered/" target="_blank">The Last of Us Parte II Remastered - PlayStation</a></li>
+      <li><a href="https://store.steampowered.com/app/2531310/The_Last_of_Us_Parte_II_Remastered/" target="_blank">The Last of Us Parte II Remastered - STEAM</a></li>
+    </ul>
+  </section>  
+
+  <footer>
+    Fan page creada por fans para fans. The Last of Us™ es propiedad de Naughty Dog & Sony.
+    <p style="margin-top: 10px; font-size: 0.8em; color: #ccc;">
+      ATENCIÓN: Esta página simula la campaña de microfinanciación de un videojuego ficticio y no representa un producto real. Práctica de Multimedia, 1º GDDV - Curso 24/25 (Móstoles/Quintana), URJC. La URJC no se hace responsable del contenido expuesto por el autor.
+    </p>
+      <p>&copy; 2025 - Todos los derechos reservados.</p>
+      <p>Desarrollado por <strong>Nombre del Equipo</strong></p>
+      <img src="lion-head-logo-mascot-wildlife-animal-illustration-generative-ai-png.webp" alt="Logo del equipo desarrollador" style="width: 100px; margin-top: 8px;">
+  </footer></p>
+
+</body>
+</html>
+<style>
+  .gallery img {
+    width: 80%;
+    max-width: 300px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: blur(2px) brightness(0.8);
+    cursor: pointer;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.2);
+    filter: blur(0) brightness(1);
+  }
+
+  .gallery img.expanded {
+    transform: scale(1);
+    filter: blur(0) brightness(1);
+    width: 100%;
+    max-width: none;
+  }
+</style>
+
+<script>
+  document.querySelectorAll('.gallery img').forEach(img => {
+    img.addEventListener('click', () => {
+      img.classList.toggle('expanded');
+    });
+  });
+</script>8'9
