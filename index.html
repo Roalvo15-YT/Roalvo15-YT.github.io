@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Fan Page - The Last of Us Parte II</title>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css.html">
+</head>
+<body>
+
+<!-- Menú de navegación -->
+<nav>
+  <ul>
+    <li><a href="#campana">Campaña</a></li>
+    <li><a href="#faq">Preguntas frecuentes</a></li>
+    <li><a href="#comentarios">Comentarios</a></li>
+    <li><a href="#contribuciones">Contribuciones</a></li>
+    <li><a href="#objetivos">Objetivos</a></li>
+    <li><a href="#equipo">Equipo</a></li>
+  </ul>
+</nav>
+
+<header>
+  <img src="logo.png" alt="Fan Page Logo" style="width: 150px; margin-bottom: 20px;">
+  <h1>THE LAST OF US PART II - FAN PAGE</h1>
+  <p>Una historia de supervivencia, pérdida y redención</p>
+</header>
+
+<div class="banner"></div>
+
+<div class="kickstarter-bar">
+  <div class="kickstarter-bar-fill"></div>
+</div>
+
+<section class="section" style="color: #ff6f61;">
+  <h1>"SUMÉRGETE EN UN MUNDO DONDE CADA DECISIÓN CUENTA Y CADA PASO DEJA HUELLA (ESTE LEMA ES DE CHATGPT, NO EL LEMA QUE SE USARÁ)."</h1>
+</section>
+
+<section class="section" id="campana">
+  <h2>🎮 Campaña del Juego</h2>
+  <iframe width="900" height="506" src="https://www.youtube.com/embed/xK5lvWLf0OM" frameborder="0" allowfullscreen style="display: block; margin: 0 auto;"></iframe>
+</section>
+
+<section class="section audio-box">
+  <h2>🎵 Canción Original</h2>
+  <p>Canción corta creada por nosotros:</p>
+  <audio controls>
+    <source src="Rick Astley - Never Gonna Give You Up (Official Music Video).mp3" type="audio/mp3">
+  </audio>
+</section>
+
+<section class="section">
+  <h2>📖 Sobre el juego</h2>
+  <p><strong>The Last of Us Parte II</strong> es una experiencia narrativa intensa...</p>
+</section>
+
+<!-- ... Resto de secciones ... -->
+
+<footer>
+  Fan page creada por fans para fans. The Last of Us™ es propiedad de Naughty Dog & Sony.
+  <p style="margin-top: 10px; font-size: 0.8em; color: #ccc;">
+    ATENCIÓN: Esta página simula la campaña de microfinanciación...
+  </p>
+  <p>&copy; 2025 - Todos los derechos reservados.</p>
+  <p>Desarrollado por <strong>Nombre del Equipo</strong></p>
+  <img src="lion-head-logo-mascot-wildlife-animal-illustration-generative-ai-png.webp" alt="Logo del equipo desarrollador" style="width: 100px; margin-top: 8px;">
+</footer>
+
+<script>
+  document.querySelectorAll('.gallery img').forEach(img => {
+    img.addEventListener('click', () => {
+      img.classList.toggle('expanded');
+    });
+  });
+
+  const spores = [];
+  function createSpores() {
+    for (let i = 0; i < 20; i++) {
+      const spore = document.createElement('div');
+      spore.classList.add('spore-particle');
+      spore.style.left = `${Math.random() * 100}vw`;
+      spore.style.top = `${Math.random() * 100}vh`;
+      spore.style.animationDelay = `${Math.random() * 6}s`;
+      document.body.appendChild(spore);
+      spores.push(spore);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    createSpores();
+  });
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const maxScroll = document.body.scrollHeight - window.innerHeight;
+    const progress = scrollY / maxScroll;
+
+    document.body.style.backgroundColor = `rgb(${18 + progress * 30}, ${18 + progress * 20}, ${18 + progress * 10})`;
+  });
+</script>
+
+</body>
+</html>
